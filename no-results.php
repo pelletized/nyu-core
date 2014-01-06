@@ -21,7 +21,14 @@
 		<?php elseif ( is_search() ) : ?>
 
 			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'nyu-core' ); ?></p>
-			<?php get_search_form(); ?>
+			<?php //get_search_form(); ?>
+			
+			<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<label>
+					<input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder', 'nyu-core' ); ?>" value="<?php echo esc_attr( get_search_query() ); ?>" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="<?php echo esc_attr_x( 'Search', 'submit button', 'nyu-core' ); ?>">
+			</form>
 
 		<?php else : ?>
 

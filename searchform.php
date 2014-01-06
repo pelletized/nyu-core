@@ -4,8 +4,10 @@
  *
  * @package nyu core
  */
-?>
-<!--
+
+/* 
+original form code
+
 <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 	<label>
 		<span class="screen-reader-text"><?php _ex( 'Search for:', 'label', 'nyu-core' ); ?></span>
@@ -13,7 +15,8 @@
 	</label>
 	<input type="submit" class="search-submit" value="<?php echo esc_attr_x( 'Search', 'submit button', 'nyu-core' ); ?>">
 </form>
--->
+*/
+?>
 
 <div class="nyuSearch">
 	<form class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get" role="search">
@@ -23,8 +26,6 @@
 				<input class="search-field" type="search" name="s" value="" placeholder="Search...">
 			</label>
 		</div>
-		<!--<input class="search-submit" type="submit" value="Search">-->
-		
 		<button id="searchBtn" type="submit"></button>
 	</form>
 </div><!--/.nyuSearch-->
