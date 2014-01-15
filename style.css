@@ -1,10 +1,10 @@
 /*
-Theme Name: nyu core
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
-Version: 1.0
+Theme Name: NYU Core
+Theme URI: http://www.nyu.edu
+Author: NYU Digital Communications
+Author URI: http://www.nyu.edu
+Description: Basic template in the style of NYU v61, and based off of http://underscores.me
+Version: 0.1
 License: GNU General Public License
 License URI: license.txt
 Text Domain: nyu-core
@@ -66,6 +66,10 @@ margin-top:30px;
 
 textarea {
 width:100%;
+}
+
+.date {
+font-weight:normal;
 }
 
 /*
@@ -154,4 +158,57 @@ cursor:pointer;
 width:75%;
 margin-right:10px;
 padding:5px;
+}
+
+/* SUBHEAD NAVIGATION 
+-------------------------------------------------------------------------*/
+#navWrap {
+	position:relative;
+	background:#E0E0E0; 
+	width:100%;
+	height:40px;
+}
+
+.menu {
+	width:930px;
+	margin:0 auto;
+}
+
+.menu li {
+float:left;
+border-right:1px solid #EFEFEF;
+}
+
+.menu li:first-child {
+border-left:1px solid #EFEFEF;
+}
+
+.menu a {
+display:block;
+height:40px;
+padding:12px 30px 0;
+background-color: #E0E0E0;
+color: black;
+text-decoration: none;
+}
+
+.current_page_item {
+background-color: #EFEFEF;
+color: #D11255;
+font-weight:bold;
+}
+
+.menu ul {
+margin:0;
+padding:0;
+}
+
+.menu li {
+display:inline-block;
+margin-left:0;
+}
+
+.menu li a:hover {
+background-color: #EFEFEF;
+color: #D11255;
 }

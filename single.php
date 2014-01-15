@@ -37,7 +37,7 @@ get_header(); ?>
 
 				</main><!-- #main -->
 			
-			</div><!--/.tripleBox-->
+			</div><!--/#primary .tripleBox-->
 			<div class="doubleBox">
 				<?php get_sidebar(); ?>
 			</div><!--/.doubleBox-->

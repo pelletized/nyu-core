@@ -36,6 +36,13 @@
 		</div><!--/.nyuLogoContainer-->			 
 
 	</div><!--/#headerContainer-->
+	<div id="navWrap">		
+<?php 
+	//pages in subheader	
+	wp_page_menu();
+	
+?>
+	</div><!--/#navWrap-->
 
 
 

@@ -146,4 +146,4 @@ function buildHelper() {
 	error_reporting(E_ALL | E_STRICT);
 }
 
-buildHelper();	
+//buildHelper(); //comment out for prod	
