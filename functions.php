@@ -94,7 +94,8 @@ add_action( 'widgets_init', 'nyu_core_widgets_init' );
  */
 function nyu_core_scripts() {
 	wp_enqueue_style( 'nyu-base', 'http://www.nyu.edu/common/css/base.css' );
-	wp_enqueue_style( 'nyu-core-fonts', '//cloud.typography.com/7436432/791902/css/fonts.css' );
+	//wp_enqueue_style( 'nyu-core-fonts', '//cloud.typography.com/7436432/791902/css/fonts.css' ); //localhost
+	wp_enqueue_style( 'nyu-core-fonts', '//cloud.typography.com/7436432/687502/css/fonts.css' ); //prod
 	wp_enqueue_style( 'nyu-core-style', get_stylesheet_uri() );
 	
 
